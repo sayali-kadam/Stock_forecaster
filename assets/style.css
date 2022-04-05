@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+}
+
+.inputs {
+    width: 25vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(5, 107, 107);
+  }
