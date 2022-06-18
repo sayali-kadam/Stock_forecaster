@@ -1,10 +1,11 @@
-.container {
-    display: flex;
-}
-
 .start {
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
+    font-family: cursive;
+    background-color: #06113C;
+    color: aliceblue;
+    margin-top: 0;
+    padding: 15px;
 }
 
 .nav {
@@ -14,7 +15,18 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: rgb(128, 177, 229);
+    background-color: #efac35;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #f7d69c;
+    border-radius: 1em;
+    margin-top: 100px;
+    font-family: system-ui;
+    padding: 20px;
+}
+
+#submit-val, #stock-code{
+    padding: 14px 40px;
 }
 
 #stock-code {
@@ -22,8 +34,12 @@
 }
 
 .content {
+    height: 450px;
     margin-left: 40%;
-    margin-top: -20%;
+    margin-top: -30%;
+    padding: 10px;
+    font-family: system-ui;
+    overflow-y: auto;
 }
 
 #number-days, #forecast-val, #stock-val, #indicators-val {
@@ -37,5 +53,19 @@
 }
 
 #stock-val, #indicators-val {
-    margin-left: 45px;
+    margin-left: 30px;
+    background-color: #06113C;
+    font-size: 20px;
+    color: aliceblue;
+    border: none;
+    border-radius: 5%;
+}
+
+#submit-val, #forecast-val {
+    background-color: #fff;
+    border-color: #06113C;
+    font-size: 17px;
+    /* color: aliceblue; */
+    /* border: none; */
+    border-radius: 5%;
 }

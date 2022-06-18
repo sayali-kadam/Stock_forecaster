@@ -25,8 +25,7 @@ app.layout = html.Div(children=[html.Div(
     [
         html.Div([
             html.Br(),
-            html.Label(['Input stock code: ',html.Br()]),
-            dcc.Input(id='stock-code', type='text'),
+            dcc.Input(id='stock-code', type='text', placeholder='Input stock code'),
             html.Button('Submit', id='submit-val', n_clicks=0)
         ]),
         html.Div([
@@ -57,7 +56,10 @@ app.layout = html.Div(children=[html.Div(
             html.Img(id='logo', style={'height':'100px', 'width':'100px'}),
             html.Div(id='company_name')
         ], id='header'),
-        html.Div(id='description', className="decription_ticker"),
+        html.Div(id='description', className="decription_ticker")
+    ], className="content"),
+    html.Div(
+    [
         html.Div([
             dcc.Graph(id='stock_graph') 
         ], id="graphs-content", style={'display':'none'}),
@@ -67,7 +69,7 @@ app.layout = html.Div(children=[html.Div(
         html.Div([
             dcc.Graph(id='forecast_graph')
         ], id="forecast-content", style={'display':'none'})
-    ], className="content")
+    ], className='graphs')
 ])
 
 
