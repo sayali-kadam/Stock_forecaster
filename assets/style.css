@@ -2,11 +2,40 @@
     display: flex;
 }
 
-.inputs {
-    width: 25vw;
+.start {
+    font-size: 30px;
+    text-align: center;
+}
+
+.nav {
+    width: 35%;
+    height: 100%;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: rgb(5, 107, 107);
-  }
+    background-color: rgb(128, 177, 229);
+}
+
+#stock-code {
+    margin-bottom: 30px;
+}
+
+.content {
+    margin-left: 40%;
+    margin-top: -20%;
+}
+
+#number-days, #forecast-val, #stock-val, #indicators-val {
+    padding: 14px 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#number-days{
+    margin-left: 15px;
+}
+
+#stock-val, #indicators-val {
+    margin-left: 45px;
+}

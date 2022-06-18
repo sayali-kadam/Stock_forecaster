@@ -19,8 +19,12 @@ code = ""
 
 app.layout = html.Div(children=[html.Div(
     [
-        html.P("Welcome to the Stock Dash App!", className="start"),
+        html.P("Stock Forecaster", className="start")
+    ]),
+    html.Div(
+    [
         html.Div([
+            html.Br(),
             html.Label(['Input stock code: ',html.Br()]),
             dcc.Input(id='stock-code', type='text'),
             html.Button('Submit', id='submit-val', n_clicks=0)
@@ -32,7 +36,7 @@ app.layout = html.Div(children=[html.Div(
                 min_date_allowed=date(1995, 8, 5),
                 max_date_allowed=date(2090, 8, 25),
                 start_date=date(2021, 8, 5),
-                end_date=date(2023, 8, 25)
+                end_date=date(2022, 5, 25)
             )
         ]),
         html.Div([
@@ -40,6 +44,7 @@ app.layout = html.Div(children=[html.Div(
             html.Button('Stock price', id='stock-val', n_clicks=0),
             # Indicators button
             html.Button('Indicators', id='indicators-val', n_clicks=0),
+            html.Br(),
             # Number of days of forecast input
             dcc.Input(id='number-days',type='text'),
             # Forecast button
